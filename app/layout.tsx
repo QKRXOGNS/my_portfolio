@@ -24,7 +24,7 @@ export default function RootLayout({
           {children}
         </main>
         <footer className="footer">
-          <p>&copy; 2025 Game Designer Portfolio. All rights reserved.</p>
+          <p>&copy; 2026 Game Designer Portfolio. All rights reserved.</p>
         </footer>
       </body>
     </html>
