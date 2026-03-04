@@ -128,6 +128,8 @@ pk개인블로그/
 
 ### Vercel 배포 (권장)
 
+> 배포 트리거용 커밋 (2026-03-04)
+
 1. GitHub에 레포지토리 푸시
 2. [Vercel](https://vercel.com)에 접속
 3. "New Project" 클릭
