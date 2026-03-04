@@ -7,6 +7,7 @@ import './page.css'
 
 export default function Home() {
   const [isVisible, setIsVisible] = useState(false)
+  const [portfolioNotice, setPortfolioNotice] = useState<string | null>(null)
 
   useEffect(() => {
     setIsVisible(true)
@@ -106,6 +107,32 @@ export default function Home() {
             <p className="highlight-description">
               최신 AI 기술을 게임 시스템에 접목하는 연구 및 실험
             </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="section portfolio-preview-section">
+        <h2 className="section-title">포트폴리오</h2>
+        <p className="section-subtitle">
+          약 4년간의 여정에서 깨닫고 얻은 지식과 경험을 토대로 제너럴해지는 과정을 걷는 개발자{' '}
+          <strong>박태훈</strong>입니다. 발전하는 AI 세상과 함께 성장하고 도메인 지식을 쌓고 있습니다.
+        </p>
+
+        <div className="portfolio-preview-card card">
+          <div className="portfolio-preview-strip" aria-hidden="true">
+            <div className="portfolio-preview-strip-inner">
+              <img src={encodeURI('/2026-03-04 14;40;04.JPEG')} alt="" />
+              <img src={encodeURI('/2026-03-04 14;40;26.JPEG')} alt="" />
+              <img src={encodeURI('/2026-03-04 14;41;26.JPEG')} alt="" />
+              <img src={encodeURI('/2026-03-04 14;41;56.JPEG')} alt="" />
+              <img src={encodeURI('/2026-03-04 14;46;39.JPEG')} alt="" />
+            </div>
+          </div>
+
+          <div className="portfolio-preview-actions">
+            <Link href="/portfolio" className="portfolio-preview-link">
+              포트폴리오 페이지로 이동 →
+            </Link>
           </div>
         </div>
       </section>

@@ -201,6 +201,154 @@
   transform: translateX(5px);
 }
 
+/* Art section (below dev) */
+.art-section {
+  padding: 2rem 0 4rem;
+}
+
+.art-section .section-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.art-intro {
+  max-width: 720px;
+  margin: 0 auto 2.5rem;
+  text-align: center;
+  color: var(--text-secondary);
+  line-height: 1.85;
+  font-size: 1.05rem;
+}
+
+.art-subsection-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 2rem 0 0.5rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid rgba(168, 85, 247, 0.25);
+}
+
+.art-subsection-desc {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 1.25rem;
+  line-height: 1.6;
+}
+
+/* ComfyUI 워크플로우 이미지 (기술 소개) */
+.art-workflow-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  max-width: 1100px;
+  margin: 0 auto 2rem;
+}
+
+.art-workflow-item {
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--background-card);
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.art-workflow-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px var(--glow-purple);
+}
+
+.art-workflow-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.art-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.25rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.art-gallery-item {
+  aspect-ratio: 1;
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--background-card);
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.art-gallery-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 24px var(--glow-purple);
+}
+
+.art-gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Project card with image */
+.project-image-wrap {
+  width: 100%;
+  aspect-ratio: 16/10;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: -0.5rem -0.5rem 0 -0.5rem;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.project-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* YouTube embed in project card */
+.project-youtube-wrap {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: -0.5rem -0.5rem 0 -0.5rem;
+  background: #000;
+  aspect-ratio: 16/9;
+}
+
+.project-youtube-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+/* Dev section (first) */
+.dev-section {
+  padding: 0 0 4rem;
+}
+
+.projects-container .section-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.projects-container .section-subtitle {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
 /* CTA Section */
 .cta-section {
   padding: 80px 40px;
@@ -274,6 +422,16 @@
 @media (max-width: 768px) {
   .projects-title {
     font-size: 2rem;
+  }
+
+  .art-workflow-gallery {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .art-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
   }
 
   .projects-grid {

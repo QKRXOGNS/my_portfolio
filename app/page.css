@@ -268,6 +268,89 @@
   line-height: 1.6;
 }
 
+/* Portfolio preview section */
+.portfolio-preview-section {
+  background: rgba(10, 10, 15, 0.7);
+  backdrop-filter: blur(10px);
+  position: relative;
+}
+
+.portfolio-preview-card {
+  max-width: 1000px;
+  margin: 2rem auto 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.portfolio-preview-strip {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.portfolio-preview-strip-inner {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.75rem;
+  padding: 1rem;
+}
+
+.portfolio-preview-strip-inner img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+  filter: blur(3.5px) brightness(0.95);
+  transform: scale(1.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.portfolio-preview-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.portfolio-preview-btn {
+  background: linear-gradient(135deg, var(--accent-purple), var(--accent-blue));
+  color: white;
+  padding: 12px 28px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.portfolio-preview-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px var(--glow-purple);
+}
+
+.portfolio-preview-notice {
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  background: rgba(168, 85, 247, 0.12);
+  border: 1px solid rgba(168, 85, 247, 0.25);
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.portfolio-preview-link {
+  color: var(--accent-cyan);
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.portfolio-preview-link:hover {
+  transform: translateY(-1px);
+}
+
 /* CTA Section */
 .cta-section {
   text-align: center;
@@ -366,6 +449,18 @@
   .highlights-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+  }
+
+  .portfolio-preview-card {
+    padding: 1.5rem;
+  }
+
+  .portfolio-preview-strip-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-preview-strip-inner img {
+    height: 200px;
   }
 
   .cta-content {

@@ -30,11 +30,17 @@ export default function Navigation() {
           <Link href="/about" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>
             소개
           </Link>
+          <Link href="/talks" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>
+            발표
+          </Link>
           <Link href="/projects/personal" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>
             개인 프로젝트
           </Link>
           <Link href="/projects/current" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>
             진행중인 프로젝트
+          </Link>
+          <Link href="/portfolio" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>
+            포트폴리오
           </Link>
         </div>
 

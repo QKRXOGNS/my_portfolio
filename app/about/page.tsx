@@ -71,6 +71,16 @@ export default function About() {
               <span className="skill-tag">Slack</span>
             </div>
           </div>
+
+          <div className="skill-category">
+            <h3 className="skill-category-title">아트</h3>
+            <div className="skill-tags">
+              <span className="skill-tag">스테이블디퓨전</span>
+              <span className="skill-tag">ComfyUI</span>
+              <span className="skill-tag">IP-Adapter</span>
+              <span className="skill-tag">LoRA</span>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -79,6 +89,38 @@ export default function About() {
         <p className="section-subtitle">4년간의 게임 업계 경험</p>
 
         <div className="timeline">
+          <div className="timeline-item card">
+            <div className="timeline-dot"></div>
+            <div className="timeline-content">
+              <div className="timeline-header">
+                <h3 className="timeline-title">개인 개발 & 창업 준비 / 게임취업밤 발표</h3>
+                <span className="timeline-period">2025.08 - 현재</span>
+              </div>
+              <p className="timeline-company">공익 훈련소 입소·수료 이후</p>
+              <ul className="timeline-description">
+                <li>공익 훈련소 입소 및 수료 (2025.08 이후)</li>
+                <li>개인적인 개발에 집중하며 창업 준비 진행</li>
+                <li>게임취업밤 발표 진행</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="timeline-item card">
+            <div className="timeline-dot"></div>
+            <div className="timeline-content">
+              <div className="timeline-header">
+                <h3 className="timeline-title">학습 & 커뮤니티 활동</h3>
+                <span className="timeline-period">2025</span>
+              </div>
+              <p className="timeline-company">성장 경험 추가</p>
+              <ul className="timeline-description">
+                <li>게임 부트 캠프 수료</li>
+                <li>게임취업밤 커서 스터디 참여</li>
+                <li>게임취업밤 게임잼 참여 및 운영</li>
+              </ul>
+            </div>
+          </div>
+
           <div className="timeline-item card">
             <div className="timeline-dot"></div>
             <div className="timeline-content">
@@ -147,7 +189,7 @@ export default function About() {
             </div>
             <div className="contact-item">
               <span className="contact-icon">💼</span>
-              <a href="https://www.linkedin.com/in/%ED%83%9C%ED%9B%88-%EB%B0%95-697370351/" target="_blank" rel="noopener noreferrer" className="contact-link">LinkedIn 프로필</a>
+              <a href="https://www.linkedin.com/in/pk6012345" target="_blank" rel="noopener noreferrer" className="contact-link">LinkedIn 프로필</a>
             </div>
             <div className="contact-item">
               <span className="contact-icon">🎬</span>
